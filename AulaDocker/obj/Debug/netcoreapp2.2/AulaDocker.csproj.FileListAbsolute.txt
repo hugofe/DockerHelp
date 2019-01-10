@@ -1,0 +1,11 @@
+C:\AulaDocker\bin\Debug\netcoreapp2.2\AulaDocker.deps.json
+C:\AulaDocker\bin\Debug\netcoreapp2.2\AulaDocker.runtimeconfig.json
+C:\AulaDocker\bin\Debug\netcoreapp2.2\AulaDocker.runtimeconfig.dev.json
+C:\AulaDocker\bin\Debug\netcoreapp2.2\AulaDocker.dll
+C:\AulaDocker\bin\Debug\netcoreapp2.2\AulaDocker.pdb
+C:\AulaDocker\obj\Debug\netcoreapp2.2\AulaDocker.csprojAssemblyReference.cache
+C:\AulaDocker\obj\Debug\netcoreapp2.2\AulaDocker.csproj.CoreCompileInputs.cache
+C:\AulaDocker\obj\Debug\netcoreapp2.2\AulaDocker.AssemblyInfoInputs.cache
+C:\AulaDocker\obj\Debug\netcoreapp2.2\AulaDocker.AssemblyInfo.cs
+C:\AulaDocker\obj\Debug\netcoreapp2.2\AulaDocker.dll
+C:\AulaDocker\obj\Debug\netcoreapp2.2\AulaDocker.pdb

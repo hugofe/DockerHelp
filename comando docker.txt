@@ -1,0 +1,67 @@
+﻿docker --version
+
+docker info
+
+docker run hello-world
+
+#lista todas as imagens que foi baixada para a maquina
+docker image ls
+
+##Procurar imagens
+docker search
+
+## List Docker containers (running, all, all in quiet mode)
+docker container ls
+docker container ls --all // only exit container
+docker container ls -aq
+
+#parar um container 
+docker container stop "id do container"
+
+#para login no repositorio docker
+docker login
+
+#rodando a imagem friendlyhello e trocando a porta de 80 para 4000
+docker run -p 4000:80 friendlyhello
+
+#Criar um repositorio ja enviando a imagem
+docker tag "nomedaimagem/" username/repository:tag
+
+#Faz o upload do repositorio, a tag identifica a imagem que irá para o repositorio.
+docker push username/repository:tag
+
+#faz o download do respotorio
+#docker pull username/repository:tag
+
+#listar as imagens em um repositorio
+docker image ls username/repository
+
+#rodando a imagem a partir do repositorio, lembrando sempre será utilizada a imagem taggiada
+docker run -p 4000:80 username/repository:tag
+
+
+Passo a passo dockerfile. Não precisa de extensão
+
+# Use an official Python runtime as a parent image
+FROM python:2.7-slim
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
+
+# Make port 80 available to the world outside this container
+EXPOSE 80
+
+# Define environment variable
+ENV NAME World
+
+# Run app.py when the container launches
+CMD ["python", "app.py"]
+
+#cria uma imagem a partir do dockerfile 
+docker build --tag=friendlyhello .

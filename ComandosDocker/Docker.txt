@@ -1,0 +1,2 @@
+Inicializar um container e sugurar a sessão
+docker container run -it alpine /bin/ash

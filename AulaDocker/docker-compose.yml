@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+
+  auladocker:
+    image: auladocker
+    build:
+      context: .
+      dockerfile: Dockerfile
