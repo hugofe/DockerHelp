@@ -1,0 +1,6 @@
+Para buildar a app dentro do docker
+Tenha certeza que esta no diretorio da aplicação
+Utilize
+O que esta entre "" deve ser o nome da aplicação em seguida do ponto . que faz referencia ao diretorio atual
+docker build -t "nomedaimagemquevocequer" .
+

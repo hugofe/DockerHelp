@@ -1,0 +1,24 @@
+version: "3"
+services:
+  web:
+    # repositório onde está a imagem docker
+    image: hugofe/get-started:part2
+    deploy:
+      #5 instancias serão abertas
+      replicas: 5
+      resources:
+        limits:
+        #10% da CPU
+          cpus: "0.1"
+          #50M de memoria para cada maquina
+          memory: 50M
+      restart_policy:
+        #Em caso de falha restart a maquina
+        condition: on-failure
+    ports:
+      - "4000:80"
+    networks:
+    #Define the webnet network with the default settings (which is a load-balanced overlay network).
+      - webnet
+networks:
+  webnet:
